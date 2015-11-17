@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/activity_main_change"
+    tools:context="com.aeolus.secretk.MainChange">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="173dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="84dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/category"
+                android:text="主密码:"
+                android:textSize="36dp"
+                android:textColor="@color/green"/>
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="请重设您的主密码"
+                android:textSize="26dp"
+                android:id="@+id/change_main"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/green"
+            android:id="@+id/ok_btn"
+            android:textColor="@color/white"
+            android:textSize="26dp"
+            android:text="修改"/>
+    </LinearLayout>
+
+</LinearLayout>

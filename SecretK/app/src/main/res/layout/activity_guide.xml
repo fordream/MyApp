@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    tools:context="com.aeolus.secretk.GuideActivity"
+    >
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/guide_view_pager"/>
+
+
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_light"
+
+            android:gravity="center"
+            android:id="@+id/guide_btn"
+            android:text="@string/guide_text"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:layout_marginBottom="99dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/main_psd"
+        android:hint="@string/hint_content"
+        android:gravity="center"
+        android:layout_above="@+id/guide_btn"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

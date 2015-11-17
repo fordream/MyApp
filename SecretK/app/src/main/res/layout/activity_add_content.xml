@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aeolus.secretk.AddContent">
+   <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="274dp"
+       android:orientation="vertical"
+       android:layout_gravity="center_vertical">
+       <LinearLayout
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/category"
+               android:text="类型:"
+               android:textSize="46dp"
+               android:textColor="@color/green"/>
+           <EditText
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:textSize="36dp"
+               android:id="@+id/add_category"/>
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/acount"
+               android:text="账户:"
+               android:textSize="46dp"
+               android:textColor="@color/green"/>
+           <EditText
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:textSize="36dp"
+               android:id="@+id/add_acount"/>
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/password"
+               android:text="密码:"
+               android:textSize="46dp"
+               android:textColor="@color/green"/>
+
+           <EditText
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:inputType="textPassword"
+               android:ems="10"
+               android:id="@+id/add_psd"
+               android:textSize="36dp"
+               android:layout_weight="1" />
+
+       </LinearLayout>
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/green"
+        android:text="添加"
+        android:textColor="@color/white"
+        android:textSize="26dp"
+        android:id="@+id/add_btn"/>
+   </LinearLayout>
+</LinearLayout>

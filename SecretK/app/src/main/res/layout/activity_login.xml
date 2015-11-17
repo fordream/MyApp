@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aeolus.secretk.Log.Login"
+    android:background="@drawable/lock"
+    android:alpha="0.7"
+    >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+
+
+        <EditText
+            android:layout_width="273dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:id="@+id/psdText"
+            android:hint="@string/hint_content"
+            android:gravity="center"
+            android:layout_marginTop="295dp"
+            />
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_text"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_red_light"
+        android:gravity="center"
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="135dp" />
+
+
+</RelativeLayout>
